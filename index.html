@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Productos Shopify</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <header class="text-center mb-4">
+            <h1>Buscador de Productos Shopify</h1>
+        </header>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="input-group mb-3">
+                    <input type="text" id="tiendaUrlInput" class="form-control" placeholder="Ingresa la URL de la tienda Shopify (ej: shop.flipperzero.one)">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="buscarBtn">Buscar</button>
+                    </div>
+                </div>
+                <small class="form-text text-muted">
+                    Ejemplo: <code>shop.flipperzero.one</code> o <code>https://store.arduino.cc</code>
+                </small>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="loadingIndicator" class="text-center my-3" style="display: none;">
+            <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Cargando...</span>
+            </div>
+            <p>Cargando productos...</p>
+        </div>
+
+        <div id="resultados" class="row mt-4">
+            <!-- Los productos se mostrarán aquí -->
+        </div>
+
+        <div id="mensajeError" class="alert alert-danger mt-3" style="display: none;">
+            <!-- Mensajes de error se mostrarán aquí -->
+        </div>
+    </div>
+
+    <footer class="text-center mt-5 mb-3">
+        <p>&copy; 2023 Buscador Shopify</p>
+    </footer>
+
+    <!-- jQuery y Bootstrap JS (necesarios para algunos componentes de Bootstrap, aunque intentaremos usar JS puro) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

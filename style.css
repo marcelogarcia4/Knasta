@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 960px;
+}
+
+header h1 {
+    color: #333;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1rem;
+    max-height: 200px; /* Limitar altura de la imagen */
+    object-fit: contain; /* Asegurar que la imagen se vea bien sin deformarse */
+}
+
+.product-card .card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #007bff; /* Color azul para el título */
+}
+
+.product-card .card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.product-card .store-name {
+    font-size: 0.8rem;
+    color: #777;
+    font-style: italic;
+}
+
+.product-card .price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #28a745; /* Color verde para el precio */
+    margin-top: 0.5rem;
+}
+
+/* Estilos para el mensaje de carga */
+#loadingIndicator {
+    display: none; /* Oculto por defecto */
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    color: #007bff;
+}
+
+/* Pequeña animación para el indicador de carga */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
