@@ -21,7 +21,7 @@ function buscarProductos(pagina = 1) {
     method: 'GET',
     headers: {
       'x-rapidapi-host': 'real-time-product-search.p.rapidapi.com',
-      'x-rapidapi-key': '093b140645mshf84fbacd52761f8p10f316jsnb07679229d97'
+      'x-rapidapi-key': 'fc3af22cc3msh41c305ad918e17cp1659e4jsnbb9ff6802d24' // Nueva API key
     }
   })
     .then(response => response.json())
@@ -101,3 +101,4 @@ inputBusqueda.addEventListener("keydown", function(e) {
     buscarProductos(1);
   }
 });
+
